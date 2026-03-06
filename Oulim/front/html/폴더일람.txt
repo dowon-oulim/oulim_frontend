@@ -1,0 +1,20 @@
+admin - 관리자
+community - 어울림터(게시판)
+mypage - 마이페이지
+volunteer-management - 봉사관리 => volunManage
+volunteer-activity - 봉사활동 => volunAct
+user - 로그인/회원가입/아디,비번찾기
+kkomi - 꼬미 수련소
+
+*****명명규칙*****
+pages/volunteer
+ ├ volunteer-list.html
+ ├ volunteer-detail.html
+ ├ volunteer-apply.html
+ ├ volunteer-review.html
+ ├ volunteer-create.html
+ ├ volunteer-edit.htm
+
+** 클래스 규칙
+지수님이 정리해서 공지 예정
+

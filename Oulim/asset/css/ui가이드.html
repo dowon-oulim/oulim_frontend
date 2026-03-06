@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>compoment Guide</title>
+
+  <!-- base css -->
+  <link rel="stylesheet" href="./core/reset.css">
+  <link rel="stylesheet" href="./core/variable.css">
+  <link rel="stylesheet" href=".core/typography.css">
+  <!-- 컨포넌트 css -->
+  <link rel="stylesheet" href="./component/pagination.css" />
+  <link rel="stylesheet" href="./component/input.css" />
+  <link rel="stylesheet" href="./component/button.css" />
+  <link rel="stylesheet" href="./component/list.css" />
+  <link rel="stylesheet" href="./component/card.css" />
+  <link rel="stylesheet" href="component/DetailCard.css" />
+  <link rel="stylesheet" href="component/badge.css" />
+</head>
+
+<body style="padding: auto;">
+  <div class="l-wrap">
+    <div style="width: 900px; margin:50px;">
+      <form>
+        <input type="text" class="c-input" name="텍스트" placeholder="이름 입력">
+        <input type="password" class="c-input" name="텍스트" placeholder="비밀번호 입력">
+        <input type="email" class="c-input" name="텍스트" placeholder="이메일 입력">
+        <input class="c-input" type="text" placeholder="입력 불가" disabled />
+      </form>
+    </div>
+
+    <div style="width: 900px; margin: 50px; display: flex; flex-direction: column; gap: 10px;">
+      <h3> 프라이머리 버튼 </h3>
+      <p>button하나의 요소는 width 100%로 되어있으므로 꼭 div>button으로 구성하여 div의 width값 설정할것 기본 크기 120px 상황에따라 유동적 사용 </p>
+      <!-- 프라이머리 버튼 -->
+      <button class="c-button c-button--primary c-button--md">프라이머리 미듐 버튼</button>
+      <button class="c-button c-button--primary c-button--sm">프라이머리 스몰 버튼</button>
+      <button class="c-button c-button--primary c-button--sm">프라이머리 스몰 버튼</button>
+    </div>
+
+    
+    <div style="width: 900px; margin:50px; display: flex; flex-direction: column; gap: 10px;">
+      <h3> 세컨더리 버튼 </h3>
+      <p>button하나의 요소는 width 100%로 되어있으므로 꼭 div>button으로 구성하여 div의 width값 설정할것 기본 크기 120px 상황에따라 유동적 사용 </p>
+      <!-- 세컨더리 버튼  -->
+      <button style="width:120px;" class="c-button c-button--secondary c-button--md">프라이머리 미듐 버튼</button>
+      <button class="c-button c-button--secondary c-button--sm">프라이머리 스몰 버튼</button>
+      <button class="c-button c-button--secondary c-button--sm">프라이머리 스몰 버튼</button>
+    </div>
+
+    <div style="width: 900px; margin:50px; display: flex; flex-direction: column; gap: 10px;">
+      <h3> Tertiary 버튼 </h3>
+      <p>button하나의 요소는 width 100%로 되어있으므로 꼭 div>button으로 구성하여 div의 width값 설정할것 기본 크기 120px 상황에따라 유동적 사용 </p>
+      <!-- Tertiary 버튼  -->
+      <button style="width:120px;" class="c-button c-button--Tertiary c-button--md">프라이머리 미듐 버튼</button>
+      <button class="c-button c-button--Tertiary c-button--sm">프라이머리 스몰 버튼</button>
+      <button class="c-button c-button--Tertiary c-button--sm">프라이머리 스몰 버튼</button>
+    </div>
+    
+    <div style="width: 900px; margin:50px;">
+      <h3> 그룹핑 버튼-투버튼 </h3>
+      <p>button하나의 요소는 width 100%로 되어있으므로 꼭 div>button으로 구성하여 div의 width값 설정할것 기본 크기 120px 상황에따라 유동적 사용 </p>
+      <!-- 투버튼 c-button-group  -->
+      <div class="c-button-group">
+        <button class="c-button c-button--primary c-button--md">저장</button>
+        <button class="c-button c-button--secondary c-button--md">취소</button>
+      </div>
+
+
+      
+      <div style="width: 900px; margin:50px;">
+        <!-- 페이지네이션  c-pagination-->
+        <nav class="c-pagination">
+          <a class="c-pagination__link is-disabled">‹</a>
+          <a class="c-pagination__link is-active">1</a>
+          <a class="c-pagination__link">2</a>
+          <a class="c-pagination__link">3</a>
+          <a class="c-pagination__link">4</a>
+          <a class="c-pagination__link">5</a>
+          <a class="c-pagination__link">6</a>
+          <a class="c-pagination__link">7</a>
+          <a class="c-pagination__link">8</a>
+          <a class="c-pagination__link">9</a>
+          <a class="c-pagination__link">10</a>
+          <a class="c-pagination__link">›</a>
+        </nav>
+      </div>
+    </div>
+
+    <section style="width: 1080px;padding: 20px;">
+      <h3>카드</h3>
+      <p>width가 100%로 잡혀있음 꼭 상위 div 혹은 section 태그로 가로값 잡아서 사용 할 것</p>
+      <!-- 카드 c-card -->
+      <div class="c-card">
+        <div class="c-card__header">
+          <span class="c-badge c-badge--primary">모집중</span>
+        </div>
+        <h3 class="c-card__title">
+          주민과 함께하는 제설작업 봉사 모집
+        </h3>
+        <p class="c-card__desc">
+          지역 주민들과 함께하는 봉사 활동입니다.
+        </p>
+        <div class="c-card__footer">
+          <span>2026.02.03 ~ 2026.02.06</span>
+        </div>
+      </div>
+      <div class="c-card">
+        <div class="c-card__header">
+          <span class="c-badge c-badge--primary">모집중</span>
+        </div>
+        <h3 class="c-card__title">
+          주민과 함께하는 제설작업 봉사 모집
+        </h3>
+        <p class="c-card__desc">
+          지역 주민들과 함께하는 봉사 활동입니다.
+        </p>
+        <div class="c-card__footer">
+          <span>2026.02.03 ~ 2026.02.06</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="width: 1080px;padding: 20px;">
+      <h3>디테일카드</h3>
+      <p>width가 100%로 잡혀있음 꼭 상위 div 혹은 section 태그로 가로값 잡아서 사용 할 것</p>
+      <!-- 카드 detail-card -->
+      <div class="c-detail-card">
+        <a href="">
+          <div class="c-detail-card__header">
+            <span class="c-badge c-badge--primary"> 모집중 </span>
+            <span class="c-badge c-badge--orange"> 독거노인 </span>
+          </div>
+          <h2 class="c-detail-card__title">주민과 함께하는 제설작업 봉사</h2>
+          <div class="c-detail-card__info">
+            <div class="c-detail-card__row">
+              <span class="c-detail-card__label"> 봉사장소 </span>
+              <span class="c-detail-card__value"> 서울특별시 도봉구 </span>
+            </div>
+            <div class="c-detail-card__row">
+              <span class="c-detail-card__label"> 봉사기간 </span>
+              <span class="c-detail-card__value"> 26.02.03 ~ 26.02.06 </span>
+            </div>
+          </div>     
+        </a>
+      </div>
+    </section>
+
+
+    <div style="width: 1080px; margin:50px;">
+      <h3> 3열 </h3>
+      <div class="c-list c-list--3col">
+        <!-- header -->
+        <div class="c-list__header">
+          <span class="c-list__col">제목</span>
+          <span class="c-list__col">기간</span>
+          <span class="c-list__col">상태</span>
+        </div>
+        <!-- body -->
+        <div class="c-list__body">
+          <div class="c-list__row">
+            <span class="c-list__col">제설 봉사</span>
+            <span class="c-list__col">26.02.03</span>
+            <div class="c-list__actions">
+              <button class="c-button c-button--primary c-button--sm">
+                수정
+              </button>
+              <button class="c-button c-button--secondary c-button--sm">
+                수정
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3> 4열 </h3>
+      <div class="c-list c-list--4col">
+        <!-- header -->
+        <div class="c-list__header">
+      
+          <span class="c-list__col">제목</span>
+          <span class="c-list__col">기간</span>
+          <span class="c-list__col">상태</span>
+          <span class="c-list__col">관리</span>
+      
+        </div>
+        <!-- body -->
+        <div class="c-list__body">
+          <div class="c-list__row">
+            <span class="c-list__col">
+              제설 봉사제설 봉사제설 봉사제설 봉사제설 봉사제설 봉사제설 봉사제설 봉사제설 봉사제설 봉사제설 봉사ㄴ
+            </span>
+            <span class="c-list__col">
+              26.02.03
+            </span>
+            <span class="c-list__col">
+              모집중
+            </span>
+            <div class="c-list__actions">
+              <button class="c-button c-button--primary c-button--sm">
+                수정
+              </button>
+              <button class="c-button c-button--secondary c-button--sm">
+                수정
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3> 5열 </h3>
+      <div class="c-list c-list--5col">
+        <!-- header -->
+        <div class="c-list__header">
+      
+          <span class="c-list__col">제목</span>
+          <span class="c-list__col">기간</span>
+          <span class="c-list__col">상태</span>
+          <span class="c-list__col">상태2</span>
+          <span class="c-list__col">관리</span>
+      
+        </div>
+        <!-- body -->
+        <div class="c-list__body">
+          <div class="c-list__row">
+            <span class="c-list__col">
+              제설 봉사
+            </span>
+            <span class="c-list__col">26.02.03</span>
+            <span class="c-list__col">모집중</span>
+            <span class="c-list__col">모집중</span>
+            <div class="c-list__actions">
+              <button class="c-button c-button--primary c-button--md">
+                수정
+              </button>
+              <button class="c-button c-button--secondary c-button--md">
+                수정
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3> 6열 </h3>
+      <div class="c-list c-list--6col">
+        <!-- header -->
+        <div class="c-list__header">
+      
+          <span class="c-list__col">제목</span>
+          <span class="c-list__col">기간</span>
+          <span class="c-list__col">상태</span>
+          <span class="c-list__col">상태2</span>
+          <span class="c-list__col">상태3</span>
+          <span class="c-list__col">관리</span>
+      
+        </div>
+        <!-- body -->
+        <div class="c-list__body">
+          <div class="c-list__row">
+            <span class="c-list__col">
+              제설 봉사
+            </span>
+            <span class="c-list__col">
+              26.02.03
+            </span>
+            <span class="c-list__col">
+              26.02.03
+            </span>
+            <span class="c-list__col">
+              26.02.03
+            </span>
+            <span class="c-list__col">
+              모집중
+            </span>
+            <div class="c-list__actions">
+              <button class="c-button c-button--primary c-button--md">
+                수정
+              </button>
+            </div>
+          </div>
+          <div class="c-list__row">
+            <span class="c-list__col">
+              제설 봉사
+            </span>
+            <span class="c-list__col">
+              26.02.03
+            </span>
+            <span class="c-list__col">
+              26.02.03
+            </span>
+            <span class="c-list__col">
+              26.02.03
+            </span>
+            <span class="c-list__col">
+              모집중
+            </span>
+            <div class="c-list__actions">
+              <button class="c-button c-button--primary c-button--md">
+                수정
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 리스트 c-list -->
+    </div>
+  </body>
+  
+  </html>
+  

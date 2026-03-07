@@ -1,0 +1,30 @@
+/* 기본 스타일 */
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 내용 묶음 */
+.l-main{
+  display:flex;
+  width: 500px;
+  /* border: 1px solid black; */
+  line-height: 50px;
+}
+
+/* 로그인 버튼 */
+.c-button--md{
+  width: 500px;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+/* 로그인 밑 알림 */
+.text{
+  background-color:aliceblue;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
+}

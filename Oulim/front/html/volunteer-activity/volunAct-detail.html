@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>봉사 활동 상세</title>
+
+  <!-- base css 필수 삽입-->
+  <link rel="stylesheet" href="/Oulim/asset/css/core/reset.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/core/variable.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/core/typography.css" />
+  <!-- 컨포넌트 css 선택-->
+  <link rel="stylesheet" href="/Oulim/asset/css/component/pagination.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/input.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/button.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/list.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/card.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/DetailCard.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
+
+  <script src="/Oulim/asset/assets/js/include.js"></script>
 </head>
+<script defer>
+  fetch('/Oulim/header-login.html').then(r => r.text()).then(t => header.innerHTML = t)
+  fetch('/Oulim/footer.html').then(r => r.text()).then(t => footer.innerHTML = t)
+</script>
+<div id="header"></div>
 <body>
-  
+  <div class="l-main">
+    <div class="l-container">
+      
+    </div>
+  </div>
 </body>
+<div id="footer"></div>
 </html>

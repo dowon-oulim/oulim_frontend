@@ -1,0 +1,7 @@
+.p-community-list-main{
+  display: flex;
+  justify-content: center;
+  width: 1080px;
+  flex-wrap: wrap;
+  margin :  auto;
+}

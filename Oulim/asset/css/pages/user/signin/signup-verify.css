@@ -1,0 +1,60 @@
+body{
+    background-color: white !important;
+}
+
+.p-signup-verify-main{
+    width: 100%;
+}
+
+.l-signup-verify-layout{
+    width: 263px;
+    height: 677px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-signup-verify-layout h2{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.c-signup-verify-input{
+    width: 263px;
+}
+.c-signup-verify-input h6{
+    margin: 10px 0;
+}
+
+.c-signup-verify-text{
+    margin-bottom: 30px;
+}
+
+.c-signup-verify-input-number{  
+    width: 155px;
+    margin-top: 10px;
+
+}
+
+.l-signup-verify-number-layout{
+    display: flex;
+    padding: 10px 0;
+    gap: 10px;
+}
+.l-signup-verify-number-layout div input{
+    width: 130px;
+}
+.l-signup-verify-number-layout div:last-child{
+    margin: auto;
+}
+
+.l-signup-verify-number-layout div:last-child button{
+    width:120px;
+}
+.c-signup-verify-numbertime{
+    margin-bottom: 10px;
+}
+.c-signup-verify-nextbtn button{
+    width: 100%;
+}
+

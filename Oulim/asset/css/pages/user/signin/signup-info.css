@@ -1,0 +1,39 @@
+body{
+    background-color: white !important;
+}
+
+.p-signup-info{
+    width: 100%;
+}
+.l-signup-info-layout{
+    width: 357px;
+    margin: 0 auto;
+}
+
+.l-signup-info-layout h2{
+    text-align: center;
+    margin: 30px 0;
+}
+.c-signup-info-text h4{
+    width: auto;
+    margin: 30px 0;
+}
+
+.l-signup-info-input-layout{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.c-signup-info-input-number{
+    margin: 10px 0;
+}
+
+.c-signup-info-input-number h6{
+    margin: 10px 0;
+}
+
+.c-signup-info-nextbtn button{
+    margin: 50px 0;
+    width: 100%;
+}

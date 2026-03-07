@@ -1,21 +1,52 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>봉사 목록</title>
 
-    <!-- base css 필수 삽입-->
-    <link rel="stylesheet" href="/Oulim/asset/css/core/reset.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/core/variable.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/core/Typography.css" />
-    <!-- 컨포넌트 css 선택-->
-    <link rel="stylesheet" href="/Oulim/asset/css/component/button.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>봉사 목록</title>
 
-    
-    <link rel="stylesheet" href="/Oulim/asset/css/pages/user/signin/signup-complete.css" />
-  </head>
-  <body>
+  <!-- base css 필수 삽입-->
+  <link rel="stylesheet" href="/Oulim/asset/css/core/reset.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/core/variable.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/core/Typography.css" />
+  <!-- 컨포넌트 css 선택-->
+  <link rel="stylesheet" href="/Oulim/asset/css/component/pagination.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/input.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/button.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/list.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/card.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/DetailCard.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
 
-  </body>
+
+  <link rel="stylesheet" href="/Oulim/asset/css/pages/user/signin/signup-complete.css" />
+  <script defer>
+    fetch('/Oulim/header-login.html').then(r => r.text()).then(t => header.innerHTML = t)
+    fetch('/Oulim/footer.html').then(r => r.text()).then(t => footer.innerHTML = t)
+  </script>
+
+</head>
+<div id="header"></div>
+</head>
+<form action="">
+  <div class="p-signup-complete">
+    <div class="l-signup-complete-layout">
+      <div><img src="" alt="확인이미지"></div>
+      <div class="l-signup-complete-title">
+        <div><h3>회원가입이 완료 되었습니다.</h3></div>
+        <div><h6>확인버튼 선택 시 메인 화면으로 이동합니다.</h6></div>
+      </div>
+      
+      <div class="c-signup-complete"><button class="c-button c-button--primary c-button--md">다음</button></div>
+    </div>
+
+  </div>
+</form>
+
+<body>
+
+</body>
+<div id="footer"></div>
+
 </html>

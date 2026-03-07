@@ -10,7 +10,7 @@
 aside{
   background-color: rgb(109, 218, 8);
   width: 300px;
-  height: 800px;
+  height: 900px;
   border: 1px solid black;
 
   justify-items: center;
@@ -19,33 +19,40 @@ aside{
 }
 .adminnow{
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   border: 1px solid black;
-  height: 20%;
- /* align-self: flex-start; */
+  height: 150px;
+  width: 100%;
+justify-content: space-around;
+/* align-items: center; */
+}
+
+
+/* nav안의 ul안의 li요소들을 세로로 배치 */
+nav ul{
+  display: flex;
+  flex-direction: column;
 }
 /* dropdown 만들기 */
 nav ul {
   width: 100%;
-  background-color: darkblue;
+  background-color: rgb(109, 218, 8);
   list-style-type : none;
   margin: 0;
   padding: 0;
+  
 }
-/* nav안의 ul안의 li요소들을 세로로 배치 */
-/* nav ul{
-  display: flex;
-  flex-direction: column;
-} */
-/* menu ul안의 마진 값 */
-nav ul .dropdown{
-  margin: 50px;
+  /* menu ul안의 마진 값 */
+  nav ul .dropdown{
+  margin: 30px;
+  
 }
 /* 드롭다운 메뉴 부모 요소 */
 .dropdown{
-  position: relative;
-  display: inline-block;
+  /* position: relative; */
+  /* display: inline-block; */
   border: 1px solid black;
+  width: 100%;
 }
 /* 드롭다운 내부 a 태그 스타일 */
 .dropdown a {
@@ -74,7 +81,7 @@ nav ul .dropdown{
 }
 /* 드롭다운 항목에 마우스 오버시 강조 효과 */
 .dropdown-content a:hover{
-  background-color: lightblue;
+  background-color: rgb(109, 218, 8);
 }
 
 
@@ -82,7 +89,7 @@ nav ul .dropdown{
 section{
   width: 100%;
   border: 1px solid black;
-  height: 800px;
+  height: 900px;
   flex: 1 1;
 
 }

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>profile-edit</title>
+
+  <!-- base css 필수 삽입-->
+  <link rel="stylesheet" href="/Oulim/asset/css/core/reset.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/core/variable.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/core/typography.css" />
+
+  <!-- 컨포넌트 css 선택-->
+  <!-- <link rel="stylesheet" href="/Oulim/asset/css/component/pagination.css" /> -->
+  <link rel="stylesheet" href="/Oulim/asset/css/component/input.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/button.css" />
+  <!-- <link rel="stylesheet" href="/Oulim/asset/css/component/list.css" /> -->
+  <!-- <link rel="stylesheet" href="/Oulim/asset/css/component/card.css" /> -->
+  <!-- <link rel="stylesheet" href="/Oulim/asset/css/component/DetailCard.css" /> -->
+  <!-- <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" /> -->
+
+  <!-- <script src="/Oulim/asset//assets/js/include.js"></script> -->
+
+  <link rel="stylesheet" href="./../../../../asset/css/pages/mypage/profile/profile-edit.css">
+</head>
+
+<body>
+  <!-- Header 자동 삽입 -->
+  <!-- <%@ include file="header.jsp" %> -->
+  <header>header</header>
+
+  <main class="l-main">
+    <!-- 팀원들 작성 영역 이 안에서 작업하기!!퍼블 작업진행 -->
+    <div class="main-container">
+      <div class="main-aside">
+        <aside>
+          <div class="main-aside-list">
+            <ul>
+              <h2>마이페이지</h2>
+              <div class="list1">
+                <li>나의 정보</li><br>
+                <li>- 내 정보 보기</li><br>
+                <li>- 내 정보 수정</li>
+
+              </div>
+              <div class="list2">
+                <li>봉사조회</li><br>
+                <li>- 예정된 봉사 이력 조회</li><br>
+                <li>- 완료된 봉사 이력 조회</li>
+              </div>
+              <div class="list3">
+                <li>포인트 조회</li>
+              </div>
+              <div class="list4">
+                <li>작성글 조회</li>
+              </div>
+              <div class="list5">
+                <li>회원 탈퇴</li>
+              </div>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <div class="main-2">
+        <div class="main-text-box">
+          <h1>나의 정보 수정</h1>
+        </div>
+
+        <div class="main-pw">
+
+          <form action="">
+
+            <h5>닉네임 수정</h5>
+            <div class="pw-text">
+              <input type="text" class="c-input" name="nickname" placeholder="기존 닉네임">
+              <button class="c-button c-button--primary c-button--md" style="width: 120px" margin="0 20px" ;>중복확인</button>
+            </div>
+
+            <h5>이메일 수정</h5>
+            <div class="pw-text">
+              <input type="email" class="c-input" name="email" placeholder="기존 이메일">
+              <button class="c-button c-button--primary c-button--md" style="width: 120px" margin="0 20px" ;>중복확인</button>
+            </div>
+
+            <h5>인증번호</h5>
+            <div class="pw-text">
+              <input type="text" class="c-input" name="verify" placeholder="인증번호 입력">
+              <button class="c-button c-button--primary c-button--md" style="width: 120px" margin="0 20px" ;>인증확인</button>
+            </div>
+
+            <h5>비밀번호 수정</h5>
+            <div class="pw-text">
+              <input type="password" class="c-input" name="new-password" placeholder="새 비밀번호 입력">
+            </div>
+
+            <h5>비밀번호 재확인</h5>
+            <div class="pw-text">
+              <input type="password" class="c-input" name="new-password" placeholder="비밀번호 확인">
+            </div>
+
+            <h5>주소</h5>
+            <div class="pw-text">
+              <input type="text" class="c-input" name="address" placeholder="주소 추가하기">
+              <button class="c-button c-button--primary c-button--md" style="width: 120px" margin="0 20px";>주소검색</button>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="c-button-group">
+          <button class="c-button c-button--primary c-button--md" style="width: 120px" margin="0 20px" ;>저장</button>
+          <button class="c-button c-button--secondary c-button--md" style="width: 120px">취소</button>
+        </div>
+        </form>
+      </div>
+
+
+
+
+    </div>
+
+
+
+  </main>
+  <footer>footer</footer>
+  <!-- Footer 자동 삽입 -->
+  <!-- <%@ include file="footer.jsp" %> -->
+</body>
+
+</html>

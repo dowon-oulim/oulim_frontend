@@ -1,0 +1,101 @@
+
+header {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+}
+
+.main-container {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.main-aside {
+    width: 250px;
+    background-color: #F0F0F0;
+}
+
+.main-aside-list {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 30px;
+}
+
+.list1 {
+    margin: 60px auto;
+    text-align: left;
+    
+}
+
+.list2 {
+    margin: 60px auto;
+    text-align: left;
+}
+
+.list3 {
+    margin: 60px auto;
+    text-align: left;
+}
+
+.list4 {
+    margin: 60px auto;
+    text-align: left;
+}
+
+.list5 {
+    margin: 60px auto;
+    text-align: left;
+}
+
+.main-2 {
+    width: 700px;
+    justify-content: center;
+}
+
+.main-text-box {
+    text-align: center;
+    padding: 10px;
+    row-gap: 10px;
+
+
+}
+
+.main-text-box>h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+.main-pw {
+    margin: 5px 40px;
+}
+
+.pw-text {
+    display: flex;
+    margin-bottom: 30px;
+   
+}
+
+.pw-text button{
+
+    margin:0 10px;
+}
+
+.c-button-group {
+    display: flex;
+    justify-content: center;
+}
+
+.c-button-group>button {
+    margin: 10px 1px;
+}
+
+
+

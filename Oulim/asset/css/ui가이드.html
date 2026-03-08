@@ -18,6 +18,18 @@
   <link rel="stylesheet" href="./component/card.css" />
   <link rel="stylesheet" href="component/DetailCard.css" />
   <link rel="stylesheet" href="component/badge.css" />
+
+  <!-- 260308 추가된 컴포넌트 -->
+  <link rel="stylesheet" href="./component/checkbox.css" />
+  <link rel="stylesheet" href="./component/radio.css" />
+  <link rel="stylesheet" href="./component/select.css" />
+  <link rel="stylesheet" href="./component/tab.css" />
+  <link rel="stylesheet" href="./component/toggle.css" />
+  <link rel="stylesheet" href="./component/modal.css" />
+
+<!-- 컴포넌트 js -->
+<script src="/Oulim/asset/js/components/modal.js"></script>
+<script src="/Oulim/asset/js/components/tab.js"></script>
 </head>
 
 <body style="padding: auto;">
@@ -31,6 +43,121 @@
       </form>
     </div>
 
+    <div style="width: 900px; margin:50px;">
+
+      <h3>Checkbox</h3>
+
+      <label class="c-checkbox">
+        <input type="checkbox">
+        <span class="c-checkbox__box"></span>
+        <span>알림 받기</span>
+      </label>
+
+
+      <h3>Radio</h3>
+
+      <label class="c-radio">
+        <input type="radio" name="rank">
+        <span class="c-radio__circle"></span>
+        <span>전체</span>
+      </label>
+
+
+      <h3>Select</h3>
+
+      <select class="c-select">
+        <option>지역 선택</option>
+        <option>서울</option>
+        <option>부산</option>
+      </select>
+
+      <!-- tab 컴포넌트 -->
+
+      <h3>Tabs</h3>
+      <div class="c-tab">
+
+      <button class="c-tab__item is-active" data-tab="all">
+      전체
+      </button>
+
+      <button class="c-tab__item" data-tab="local">
+      지역
+      </button>
+
+      <button class="c-tab__item" data-tab="friend">
+      친구
+      </button>
+
+      </div>
+      <div class="c-tab-content">
+
+        <div class="c-tab-panel is-active" data-panel="all">
+        전체 랭킹
+        </div>
+
+        <div class="c-tab-panel" data-panel="local">
+        지역 랭킹
+        </div>
+
+        <div class="c-tab-panel" data-panel="friend">
+        친구 랭킹
+        </div>
+
+      </div>
+
+      <!-- 토글 -->
+      <h3>Toggle</h3>
+
+      <label class="c-toggle">
+        <input type="checkbox">
+        <span class="c-toggle__slider"></span>
+      </label>
+
+      <!-- 모달 -->
+      <!-- 모달 열기 버튼 -->
+      <div style="width:120px;">
+        <button class="c-button c-button--primary c-button--md js-modal-open">
+          모달 열기
+        </button>
+      </div>
+
+      <!-- Modal -->
+      <div class="c-modal" id="modalExample">
+
+        <div class="c-modal__box">
+
+          <div class="c-modal__header">
+            <h3 class="c-modal__title">봉사 신청</h3>
+            <button class="c-modal__close js-modal-close">✕</button>
+          </div>
+
+          <div class="c-modal__body">
+            봉사 신청을 진행하시겠습니까?
+            해당영역에 필요한 코드들을 삽입해서 단위 업무에서 활용하시면 될듯 합니다
+            사실 저도 감은 안오는데 템플릿 가져가서 연구를 해보시옵소서 여러분
+          </div>
+
+          <div class="c-modal__footer">
+
+            <button class="c-button c-button--secondary c-button--md js-modal-close">
+              취소
+            </button>
+
+            <button class="c-button c-button--primary c-button--md">
+              확인
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
     <div style="width: 900px; margin: 50px; display: flex; flex-direction: column; gap: 10px;">
       <h3> 프라이머리 버튼 </h3>
       <p>button하나의 요소는 width 100%로 되어있으므로 꼭 div>button으로 구성하여 div의 width값 설정할것 기본 크기 120px 상황에따라 유동적 사용 </p>
@@ -40,7 +167,7 @@
       <button class="c-button c-button--primary c-button--sm">프라이머리 스몰 버튼</button>
     </div>
 
-    
+
     <div style="width: 900px; margin:50px; display: flex; flex-direction: column; gap: 10px;">
       <h3> 세컨더리 버튼 </h3>
       <p>button하나의 요소는 width 100%로 되어있으므로 꼭 div>button으로 구성하여 div의 width값 설정할것 기본 크기 120px 상황에따라 유동적 사용 </p>
@@ -58,7 +185,7 @@
       <button class="c-button c-button--Tertiary c-button--sm">프라이머리 스몰 버튼</button>
       <button class="c-button c-button--Tertiary c-button--sm">프라이머리 스몰 버튼</button>
     </div>
-    
+
     <div style="width: 900px; margin:50px;">
       <h3> 그룹핑 버튼-투버튼 </h3>
       <p>button하나의 요소는 width 100%로 되어있으므로 꼭 div>button으로 구성하여 div의 width값 설정할것 기본 크기 120px 상황에따라 유동적 사용 </p>
@@ -69,7 +196,7 @@
       </div>
 
 
-      
+
       <div style="width: 900px; margin:50px;">
         <!-- 페이지네이션  c-pagination-->
         <nav class="c-pagination">
@@ -143,7 +270,7 @@
               <span class="c-detail-card__label"> 봉사기간 </span>
               <span class="c-detail-card__value"> 26.02.03 ~ 26.02.06 </span>
             </div>
-          </div>     
+          </div>
         </a>
       </div>
     </section>
@@ -178,12 +305,12 @@
       <div class="c-list c-list--4col">
         <!-- header -->
         <div class="c-list__header">
-      
+
           <span class="c-list__col">제목</span>
           <span class="c-list__col">기간</span>
           <span class="c-list__col">상태</span>
           <span class="c-list__col">관리</span>
-      
+
         </div>
         <!-- body -->
         <div class="c-list__body">
@@ -212,13 +339,13 @@
       <div class="c-list c-list--5col">
         <!-- header -->
         <div class="c-list__header">
-      
+
           <span class="c-list__col">제목</span>
           <span class="c-list__col">기간</span>
           <span class="c-list__col">상태</span>
           <span class="c-list__col">상태2</span>
           <span class="c-list__col">관리</span>
-      
+
         </div>
         <!-- body -->
         <div class="c-list__body">
@@ -244,14 +371,14 @@
       <div class="c-list c-list--6col">
         <!-- header -->
         <div class="c-list__header">
-      
+
           <span class="c-list__col">제목</span>
           <span class="c-list__col">기간</span>
           <span class="c-list__col">상태</span>
           <span class="c-list__col">상태2</span>
           <span class="c-list__col">상태3</span>
           <span class="c-list__col">관리</span>
-      
+
         </div>
         <!-- body -->
         <div class="c-list__body">
@@ -304,7 +431,6 @@
 
       <!-- 리스트 c-list -->
     </div>
-  </body>
-  
-  </html>
-  
+</body>
+
+</html>

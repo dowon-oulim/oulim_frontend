@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rank</title>
+<!-- 기본 css  -->
+  <link rel="stylesheet" href="/Oulim/asset/css/core/reset.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/core/variable.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/core/typography.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/core/layout.css" />
+<!-- 컴포넌트 -->
+  <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css">
+
+<!-- 페이지 -->
+  <link rel="stylesheet" href="/Oulim/asset/css/pages/kkomi/rank.css">
+<!-- 스크립트 -->
+  <script defer>
+    fetch('/Oulim/header-login.html')
+      .then(r => r.text())
+      .then(t => document.querySelector("#header").innerHTML = t)
+
+    fetch('/Oulim/footer.html')
+      .then(r => r.text())
+      .then(t => document.querySelector("#footer").innerHTML = t)
+  </script>
+</head>
+<body>
+    <div id="header"></div>
+    <main class="l-main">
+        <div class="l-container">
+            <section class="p-rank">
+
+            <h2 class="p-rank__title">랭킹</h2>
+
+            <div class="p-rank__top3">
+
+            <!-- 2등 -->
+            <div class="c-rank-card c-rank-card--second">
+
+            <div class="c-rank-card__rank">🥈</div>
+
+            <img src="/Oulim/asset/image/character/komi-lv9.svg"
+            class="c-rank-card__img">
+
+            <div class="c-rank-card-user">
+            <span class="c-rank-card-user__name">이달의 봉야</span>
+            <span class="c-rank-card-user__score">48034p</span>
+            </div>
+
+            </div>
+
+
+            <!-- 1등 -->
+            <div class="c-rank-card c-rank-card--first">
+
+            <div class="c-rank-card__rank">🥇</div>
+
+            <img src="/Oulim/asset/image/character/komi-lv9.svg"
+            class="c-rank-card__img">
+
+            <div class="c-rank-card-user">
+            <span class="c-rank-card-user__name">이달의 봉사왕은 바로나야</span>
+            <span class="c-rank-card-user__score">48034p</span>
+            </div>
+
+            </div>
+
+
+            <!-- 3등 -->
+            <div class="c-rank-card c-rank-card--third">
+
+            <div class="c-rank-card__rank">🥉</div>
+
+            <img src="/Oulim/asset/image/character/komi-lv9.svg"
+            class="c-rank-card__img">
+
+            <div class="c-rank-card-user">
+            <span class="c-rank-card-user__name">이달의 봉사왕은 바로나야2</span>
+            <span class="c-rank-card-user__score">48034p</span>
+            </div>
+
+            </div>
+
+            </div>
+
+
+            <!-- 4~10위 -->
+            <ul class="c-rank-list">
+
+            <li class="c-rank-item">
+            <span class="c-rank-item__rank">4</span>
+            <span class="c-rank-item__name">봉사러버</span>
+            <span class="c-rank-item__score">45230p</span>
+            </li>
+
+            <li class="c-rank-item">
+            <span class="c-rank-item__rank">5</span>
+            <span class="c-rank-item__name">좋은사람</span>
+            <span class="c-rank-item__score">44100p</span>
+            </li>
+
+            <li class="c-rank-item">
+            <span class="c-rank-item__rank">6</span>
+            <span class="c-rank-item__name">따뜻한손</span>
+            <span class="c-rank-item__score">42000p</span>
+            </li>
+
+            <li class="c-rank-item">
+            <span class="c-rank-item__rank">7</span>
+            <span class="c-rank-item__name">봉사왕후보</span>
+            <span class="c-rank-item__score">39990p</span>
+            </li>
+
+            <li class="c-rank-item">
+            <span class="c-rank-item__rank">8</span>
+            <span class="c-rank-item__name">마음천사</span>
+            <span class="c-rank-item__score">37210p</span>
+            </li>
+
+            <li class="c-rank-item">
+            <span class="c-rank-item__rank">9</span>
+            <span class="c-rank-item__name">행복나눔</span>
+            <span class="c-rank-item__score">35020p</span>
+            </li>
+
+            <li class="c-rank-item">
+            <span class="c-rank-item__rank">10</span>
+            <span class="c-rank-item__name">따뜻한세상</span>
+            <span class="c-rank-item__score">33000p</span>
+            </li>
+
+            </ul>
+
+            </section>
+        </div>
+    </main>
+    <div id="footer"></div>
+</body>
+</html>

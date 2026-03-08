@@ -1,154 +1,203 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>finish-volunteer</title>
 
-    <!-- base css 필수 삽입-->
-    <link rel="stylesheet" href="/Oulim/asset/css/core/reset.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/core/variable.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/core/typography.css" />
+<head>
 
-    <!-- 컨포넌트 css 선택-->
-    <link rel="stylesheet" href="/Oulim/asset/css/component/pagination.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/component/input.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/component/button.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/component/list.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/component/card.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/component/DetailCard.css" />
-    <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>finish-volunteer</title>
 
-    <!-- <script src="/Oulim/asset//assets/js/include.js"></script> -->
+  <link rel="stylesheet" href="/Oulim/asset/css/core/reset.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/core/variable.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/core/typography.css" />
 
-    <link
-      rel="stylesheet"
-      href="./../../../../asset/css/pages/mypage/volunteer-history/finish-volunteer.css"
-    />
-  </head>
+  <link rel="stylesheet" href="/Oulim/asset/css/component/pagination.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/input.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/button.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/list.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/card.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/DetailCard.css" />
+  <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
 
-  <body>
-    <!-- Header 자동 삽입 -->
-    <!-- <%@ include file="header.jsp" %> -->
-    <header>header</header>
+  <link rel="stylesheet" href="/Oulim/asset/css/pages/mypage/volunteer-history/finish-volunteer.css" />
 
-    <main class="l-main">
-      <!-- 팀원들 작성 영역 이 안에서 작업하기!!퍼블 작업진행 -->
-      <div class="main-container">
-        <div class="main-aside">
-          <aside>
-            <div class="main-aside-list">
-              <ul>
-                <h2>마이페이지</h2>
-                <div class="list1">
-                  <li>나의 정보</li>
-                  <br />
-                  <li>- 내 정보 보기</li>
-                  <br />
-                  <li>- 내 정보 수정</li>
-                </div>
-                <div class="list2">
-                  <li>봉사조회</li>
-                  <br />
-                  <li>- 예정된 봉사 이력 조회</li>
-                  <br />
-                  <li>- 완료된 봉사 이력 조회</li>
-                </div>
-                <div class="list3">
-                  <li>포인트 조회</li>
-                </div>
-                <div class="list4">
-                  <li>작성글 조회</li>
-                </div>
-                <div class="list5">
-                  <li>회원 탈퇴</li>
-                </div>
-              </ul>
-            </div>
-          </aside>
-        </div>
+  <script defer>
 
-        <div class="main-2">
-          <div class="main-section1">
-            <h1>완료된 봉사 이력 조회</h1>
-          </div>
+    fetch('/Oulim/header-login.html')
+      .then(r => r.text())
+      .then(t => document.getElementById('header').innerHTML = t)
 
-          <div class="main-section3">
-            <div class="c-card">
-              <h6>나의포인트</h6>
-              <hr />
-              <div class="c-card__header">
-                <span class="c-badge c-badge--primary">모집중</span>
-              </div>
-              <h3 class="c-card__title">주민과 함께하는 제설작업 봉사 모집</h3>
-              <p class="c-card__desc">
-                지역 주민들과 함께하는 봉사 활동입니다.
-              </p>
-              <div class="c-card__footer">
-                <span>2026.02.03 ~ 2026.02.06</span>
-              </div>
-              <br />
-              </div>
+    fetch('/Oulim/footer.html')
+      .then(r => r.text())
+      .then(t => document.getElementById('footer').innerHTML = t)
 
+  </script>
 
-              <div class="c-card">
-                <div class="c-card__header">
-                  <span class="c-badge c-badge--primary">모집중</span>
-                </div>
-                <h3 class="c-card__title">
-                  주민과 함께하는 제설작업 봉사 모집
-                </h3>
-                <p class="c-card__desc">
-                  지역 주민들과 함께하는 봉사 활동입니다.
-                </p>
-                <div class="c-card__footer">
-                  <span>2026.02.03 ~ 2026.02.06</span>
-                </div>
-                <br />
-              </div>
+</head>
 
-              <div class="c-card">
-                <div class="c-card__header">
-                  <span class="c-badge c-badge--primary">모집중</span>
-                </div>
-                <h3 class="c-card__title">
-                  주민과 함께하는 제설작업 봉사 모집
-                </h3>
-                <p class="c-card__desc">
-                  지역 주민들과 함께하는 봉사 활동입니다.
-                </p>
-                <div class="c-card__footer">
-                  <span>2026.02.03 ~ 2026.02.06</span>
-                </div>
-                <br />
-              </div>
+<body>
 
-              
-            </div>
+  <div id="header"></div>
 
-          <div class="page">
-            <nav class="c-pagination">
-          <a class="c-pagination__link is-disabled">‹</a>
-          <a class="c-pagination__link is-active">1</a>
-          <a class="c-pagination__link">2</a>
-          <a class="c-pagination__link">3</a>
-          <a class="c-pagination__link">4</a>
-          <a class="c-pagination__link">5</a>
-          <a class="c-pagination__link">6</a>
-          <a class="c-pagination__link">7</a>
-          <a class="c-pagination__link">8</a>
-          <a class="c-pagination__link">9</a>
-          <a class="c-pagination__link">10</a>
-          <a class="c-pagination__link">›</a>
-        </nav>
-          </div>
+  <main class="l-main">
+
+    <div class="main-container">
+
+      <!-- aside -->
+      <div class="main-aside">
+
+        <aside>
+
+          <div class="main-aside-list">
+
+            <h2>마이페이지</h2>
+
+            <ul class="list1">
+              <li>나의 정보</li>
+              <br>
+              <li>- 내 정보 보기</li>
+              <br>
+              <li>- 내 정보 수정</li>
+
+            </ul>
+
+            <ul class="list2">
+              <li>봉사조회</li>
+              <br>
+              <li>- 예정된 봉사 이력 조회</li>
+              <br>
+              <li>- 완료된 봉사 이력 조회</li>
+
+            </ul>
+
+            <ul class="list3">
+              <li>포인트 조회</li>
+            </ul>
+
+            <ul class="list4">
+              <li>작성글 조회</li>
+            </ul>
+
+            <ul class="list5">
+              <li>회원 탈퇴</li>
+            </ul>
 
           </div>
-        </div>
+
+        </aside>
+
       </div>
-    </main>
-    <footer>footer</footer>
-    <!-- Footer 자동 삽입 -->
-    <!-- <%@ include file="footer.jsp" %> -->
-  </body>
+
+
+      <!-- content -->
+      <div class="main-2">
+
+        <div class="main-section1">
+          <h1>완료된 봉사 이력 조회</h1>
+        </div>
+
+
+        <div class="main-section3">
+
+          <div class="c-card">
+
+
+
+            <div class="c-card__header">
+              <span class="c-badge c-badge--primary">완료</span>
+            </div>
+
+            <h3 class="c-card__title">
+              주민과 함께하는 제설작업 봉사 모집
+            </h3>
+
+            <p class="c-card__desc">
+              지역 주민들과 함께하는 봉사 활동입니다.
+            </p>
+
+            <div class="c-card__footer">
+              <span>2026.02.03 ~ 2026.02.06</span>
+            </div>
+
+          </div>
+
+
+          <div class="c-card">
+
+            <div class="c-card__header">
+              <span class="c-badge c-badge--primary">완료</span>
+            </div>
+
+            <h3 class="c-card__title">
+              주민과 함께하는 제설작업 봉사 모집
+            </h3>
+
+            <p class="c-card__desc">
+              지역 주민들과 함께하는 봉사 활동입니다.
+            </p>
+
+            <div class="c-card__footer">
+              <span>2026.02.03 ~ 2026.02.06</span>
+            </div>
+
+          </div>
+
+
+          <div class="c-card">
+
+            <div class="c-card__header">
+              <span class="c-badge c-badge--primary">완료</span>
+            </div>
+
+            <h3 class="c-card__title">
+              주민과 함께하는 제설작업 봉사 모집
+            </h3>
+
+            <p class="c-card__desc">
+              지역 주민들과 함께하는 봉사 활동입니다.
+            </p>
+
+            <div class="c-card__footer">
+              <span>2026.02.03 ~ 2026.02.06</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="page">
+
+          <nav class="c-pagination">
+
+            <a class="c-pagination__link is-disabled">‹</a>
+            <a class="c-pagination__link is-active">1</a>
+            <a class="c-pagination__link">2</a>
+            <a class="c-pagination__link">3</a>
+            <a class="c-pagination__link">4</a>
+            <a class="c-pagination__link">5</a>
+            <a class="c-pagination__link">6</a>
+            <a class="c-pagination__link">7</a>
+            <a class="c-pagination__link">8</a>
+            <a class="c-pagination__link">9</a>
+            <a class="c-pagination__link">10</a>
+            <a class="c-pagination__link">›</a>
+
+          </nav>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    </div>
+
+  </main>
+
+  <div id="footer"></div>
+
+</body>
+
 </html>

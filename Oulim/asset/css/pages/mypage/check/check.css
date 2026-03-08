@@ -1,4 +1,3 @@
-
 header {
     background-color: black;
 }
@@ -7,91 +6,53 @@ footer {
     background-color: black;
 }
 
-.main-container {
+.l-mypage {
     height: 900px;
     display: flex;
     justify-content: center;
     margin: 100px;
-    /* gap: 20px; */
 }
 
-.main-aside {
-    
+.l-mypage--aside {
     width: 250px;
     background-color: #F0F0F0;
 }
 
-.main-aside-list {
-    /* display: flex; */
-    flex-direction: row;
-    justify-content: center;
+.p-mypage-check--menu {
     text-align: center;
     padding: 100px 30px;
 }
 
-.list1 {
-    margin: 60px auto;
-    text-align: left;
-    
-}
-
-.list2 {
+.p-mypage-check--menu-group {
     margin: 60px auto;
     text-align: left;
 }
 
-.list3 {
-    margin: 60px auto;
-    text-align: left;
-}
-
-.list4 {
-    margin: 60px auto;
-    text-align: left;
-}
-
-.list5 {
-    margin: 60px auto;
-    text-align: left;
-}
-
-.main-2 {
-    /* border: 1px solid black; */
-    /* background-color: aquamarine; */
+.l-mypage--content {
     width: 700px;
     justify-content: center;
 }
 
-.main-text-box {
+.p-mypage-check--header {
     text-align: center;
     padding: 10px;
-    row-gap: 10px;
     margin-bottom: 50px;
-
 }
 
-.m2-text-box-1 {
+.p-mypage-check--title {
     margin-top: 25px;
     margin-bottom: 30px;
 }
 
-
-.main-pw {
+.p-mypage-check--form {
     margin: 5px 40px;
-    
 }
-
-
 
 .c-button-group {
     display: flex;
     justify-content: center;
-    
 }
 
-.c-button-group>button {
+.c-button-group > button {
     margin: 10px 1px;
 }
-
-
-

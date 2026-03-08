@@ -12,11 +12,13 @@
     text-align: center;
 }
 
-.p-volunteer-manage-detail .c-pagination {
+/* 페이지네이션 영역 */
+.l-container .c-pagination {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:36px;
+    margin: 36px auto 0;
+    width: fit-content;
 }
 
 .c-button--volunteer-manage-detail {
@@ -24,4 +26,9 @@
     justify-content: center;
     gap: 12px;
     margin-top: 52px;
+}
+
+button:disabled{
+  opacity:0.5;
+  cursor:not-allowed;
 }

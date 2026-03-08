@@ -1,6 +1,3 @@
-body{
-    background-color: white !important;
-}
 
 .p-signup-info{
     width: 100%;
@@ -24,6 +21,9 @@ body{
     gap: 10px;
     margin: 10px 0;
 }
+.l-signup-info-input-layout div:first-child{
+    flex: 1;
+}
 
 .c-signup-info-input-number{
     margin: 10px 0;
@@ -36,4 +36,43 @@ body{
 .c-signup-info-nextbtn button{
     margin: 50px 0;
     width: 100%;
+}
+
+/* 에러 */
+
+.is-error-text{
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 16px;
+}
+
+.c-input.is-error{
+  border: 1px solid red;
+}
+
+/* 비번 표시  */
+
+.l-toggle-layout {
+  position: relative;
+}
+
+#c-password-btn-toggle{
+  position: absolute;
+  border: 1px solid red;
+  width: 50px;
+  height: 45px;
+  right: 10px;
+}
+
+.l-toggle-layout-2 {
+  position: relative;
+}
+
+#c-password-btn-toggle-2{
+  position: absolute;
+  border: 1px solid red;
+  width: 50px;
+  height: 45px;
+  right: 10px;
 }

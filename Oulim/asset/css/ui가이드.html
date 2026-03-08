@@ -35,12 +35,101 @@
 <body style="padding: auto;">
   <div class="l-wrap">
     <div style="width: 900px; margin:50px;">
-      <form>
-        <input type="text" class="c-input" name="텍스트" placeholder="이름 입력">
-        <input type="password" class="c-input" name="텍스트" placeholder="비밀번호 입력">
-        <input type="email" class="c-input" name="텍스트" placeholder="이메일 입력">
-        <input class="c-input" type="text" placeholder="입력 불가" disabled />
-      </form>
+      <div style="width:900px; margin:50px;">
+
+        <form>
+
+        <!-- 이름 -->
+        <div class="c-form-field">
+
+        <label class="c-form-field__label">
+        이름
+        </label>
+
+        <input
+        type="text"
+        class="c-input"
+        placeholder="이름 입력"
+        >
+
+        </div>
+
+
+        <!-- 비밀번호 -->
+        <div class="c-form-field">
+
+        <label class="c-form-field__label">
+        비밀번호
+        </label>
+
+        <input
+        type="password"
+        class="c-input"
+        placeholder="비밀번호 입력"
+        >
+
+        <p class="c-form-field__helper">
+        8자 이상 입력해주세요
+        </p>
+
+        </div>
+
+
+        <!-- 이메일 -->
+        <div class="c-form-field">
+
+        <label class="c-form-field__label">
+        이메일
+        </label>
+
+        <input
+        type="email"
+        class="c-input"
+        placeholder="이메일 입력"
+        >
+
+        </div>
+
+
+        <!-- disabled -->
+        <div class="c-form-field">
+
+        <label class="c-form-field__label">
+        입력 불가
+        </label>
+
+        <input
+        type="text"
+        class="c-input"
+        placeholder="입력 불가"
+        disabled
+        >
+
+        </div>
+
+
+        <!-- error example -->
+        <div class="c-form-field is-error">
+
+        <label class="c-form-field__label">
+        이메일
+        </label>
+
+        <input
+        type="email"
+        class="c-input"
+        placeholder="이메일 입력"
+        >
+
+        <p class="c-form-field__error">
+        이메일 형식이 올바르지 않습니다
+        </p>
+
+        </div>
+
+        </form>
+
+      
     </div>
 
     <div style="width: 900px; margin:50px;">

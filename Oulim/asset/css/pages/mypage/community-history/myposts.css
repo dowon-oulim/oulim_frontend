@@ -1,100 +1,68 @@
-
 header {
-    background-color: black;
+background-color: black;
 }
 
 footer {
-    background-color: black;
+background-color: black;
 }
 
-.main-container {
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin: 100px;
+.l-mypage {
+height: auto;
+display: flex;
+justify-content: center;
+margin: 100px;
 }
 
-.main-aside {
-    width: 250px;
-    background-color: #F0F0F0;
+.l-mypage--aside {
+width: 250px;
+background-color: #F0F0F0;
 }
 
-.main-aside-list {
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    padding: 100px 30px;
+.p-mypage-posts--menu {
+text-align: center;
+padding: 100px 30px;
 }
 
-.list1 {
-    margin: 60px auto;
-    text-align: left;
-    
+.p-mypage-posts--menu-group {
+margin: 60px auto;
+text-align: left;
 }
 
-.list2 {
-    margin: 60px auto;
-    text-align: left;
+.l-mypage--content {
+width: 700px;
+justify-content: center;
 }
 
-.list3 {
-    margin: 60px auto;
-    text-align: left;
+.p-mypage-posts--header {
+display: flex;
+justify-content: center;
+gap: 100px;
+align-items: center;
+height: 100px;
 }
 
-.list4 {
-    margin: 60px auto;
-    text-align: left;
-}
-
-.list5 {
-    margin: 60px auto;
-    text-align: left;
-}
-
-.main-2 {
-    width: 700px;
-    justify-content: center;
-    
-}
-
-.main-section1 {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    align-items: center;
-    height: 100px;
-}
-
-
-
-.main-section3 {
-   padding: 30px;
-   justify-content: center;
+.p-mypage-posts--body {
+padding: 30px;
+justify-content: center;
 }
 
 .c-list__header {
-    background-color: #F0F0F0 !important;
+background-color: #F0F0F0 !important;
 }
 
-.c-list__header>span {
-  justify-content: center;
+.c-list__header > span {
+justify-content: center;
 }
 
-
-.c-list__row>span {
-  justify-content: center;
+.c-list__row > span {
+justify-content: center;
 }
 
 .c-list__actions {
-  justify-content: center;
+justify-content: center;
 }
 
-.page>nav{
-  justify-content: center;
-  margin-top: 20px;
+.p-mypage-posts--pagination > nav {
+justify-content: center;
+margin-top: 20px;
 }
-
-
-
-

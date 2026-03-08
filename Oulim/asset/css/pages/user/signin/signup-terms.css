@@ -1,13 +1,18 @@
-body{
-    background-color: white !important;
+/* 일반 일때 나오는 약관 */
+#is-general-terms{
+    display: block;
+}
+/* 기업 일때 나오는 약관 */
+#is-business-terms{
+    display: none;
 }
 
+
 .p-signup{
+    display: block;
     width: 100%;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
 }
+
 .l-signup-choice{
     display: flex;
     text-align: center;

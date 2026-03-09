@@ -2,14 +2,20 @@
 
 const rows = document.querySelectorAll(".c-list__row");
 const pagination = document.querySelector(".c-pagination");
-
 const perPage = 10; // 한 페이지 리스트 개수
 const pageGroup = 10; // 페이지 버튼 개수
-
 const totalPages = Math.ceil(rows.length / perPage);    // 전체 페이지 계싼
-
 let currentPage = 1; 
 
+// 리스트 클릭시 상세페이지 이동
+rows.forEach(row => {
+  row.addEventListener("click", () => {
+    const link = row.dataset.href;
+    if (link) {
+      location.href = link;
+    }
+  });
+});
 
 // 페이지의 데이터 표시 함수
 function showPage(page) {

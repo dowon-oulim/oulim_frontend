@@ -34,13 +34,15 @@ margin-bottom:100px;
 }
 
 
-/* 메뉴 기본*/
+/* 메뉴 기본 */
 
 .sidebar-menu ul{
 list-style:none;
 margin:0;
 padding:0;
-border:1px solid black;
+
+border: 1px solid black;
+
 }
 
 
@@ -48,6 +50,8 @@ border:1px solid black;
 
 .menu-item{
 border-bottom:3px solid rgb(191,191,191);
+
+
 }
 
 
@@ -55,16 +59,15 @@ border-bottom:3px solid rgb(191,191,191);
 
 .menu-title, .menu-item a{
 
-display:block;
-width:100%;
-padding:15px 20px;
+    display:block;
+    width:100%;
+    padding:15px 20px;
 
 color:white;
 text-decoration:none;
 
 cursor:pointer;
-
-border:1px solid black;
+border: 1px solid black;
 
 }
 
@@ -76,30 +79,39 @@ background:#6DDA08;
 }
 
 
-/* 드롭다운 기본 숨김*/
+/* 드롭다운 기본 숨김 */
 
 .submenu{
 display:none;
 background:#6DDA08;
+
+
 }
+
 
 /* hover 시 드롭다운 열림 */
+
 .dropdown:hover .submenu{
 display:block;
-border:1px solid black;
-}
 
+border: 1px solid black;
+
+}
 
 
 /* 서브메뉴 스타일 */
+
 .submenu li a{
 display:block;
 padding:12px 30px;
+
 }
 
 .submenu li a:hover{
 background:#51AF01;
-border:1px solid black;
+
+border: 1px solid black;
+
 }
 
 /* 메인위에 헤더 */
@@ -111,33 +123,17 @@ border-bottom:1px solid #ddd;
 margin-bottom:100px;
 }
 
-
-
-/* 메인 */
-
-.search-user{
-display:flex;
-flex-direction:column;
-flex:1;
-
-}
-
-
-/* 메인 내용영역*/
+/* 메인 영역 */
 
 .l-content{
+flex: 1;
 background:#f0f0f0;
-border:1px solid black;
 
-display:flex;
-flex-direction:column;
+border: 1px solid black;
+display: flex;
 
-width:100%;
-padding:30px;
 }
 
-
-/* 컨텐츠 박스 */
 
 #content-area{
 
@@ -145,34 +141,30 @@ background:white;
 border-radius:5px;
 
 display:flex;
-align-items:center;
-gap:10px;
+align-items:left;
+gap:50px;
 
 padding:20px;
-justify-content: center;
+
 border:1px solid black;
+display: flex;
+flex-direction: column;
+width: 800px;
+
 }
 
-
-/* 검색 select */
-
-.search-item{
-
-    padding:10px;
-    
-    border:1px solid black;
+#userNickname{
+  display: flex;
+  align-items: center;
+  justify-content:space-between
 }
 
-
-/* input */
+#myPoint{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .c-input{
-    width: 400px;
-    border:1px solid black;
+  width:400px;
 }
-
-
-
-/* .c-button{
-    width: 50px;
-} */

@@ -5,12 +5,20 @@ const USER_TYPE = {
     USER: "USER",
     COMPANY: "COMPANY"
 };
+// 글 제목
+const title = document.querySelector(".c-community-repost-title .c-input");
 
-const repostRepostBtn = document.querySelector(".l-community-repost-btn-group .c-button-group .c-button");
+// 글 작성 본문
+const postContent = document.querySelector(".c-textarea");
+
+// 수정버튼
+const repostRepostBtn = document.querySelector("#repost-button");
+const cancelBtn = document.querySelector("#cancel-button");
 
 repostRepostBtn.addEventListener("click",(e) => {
     console.log("등록 버튼 클릭");
-
+    // 임시로 submit 막기
+    e.preventDefault();
     if (!isLogin) {
         alert("로그인이 필요합니다.")
 
@@ -23,8 +31,8 @@ repostRepostBtn.addEventListener("click",(e) => {
         return;
     }
 
-    if (commentText.value.trim() === "") {
-        alert("댓글 내용을 입력해주세요.");
+    if(title.value.trim() === ""){
+        alert("제목을 입력해주세요.")
         return;
     }
 
@@ -37,4 +45,15 @@ repostRepostBtn.addEventListener("click",(e) => {
         alert("이미지 첨부는 하나만 가능합니다.");
         return;
     }
+
+    const result = confirm("수정하시겠습니까?");
+    if(result)
+    {
+        alert("수정되었습니다.");
+        location.href="/Oulim/front/html/mypage/community-history/myposts.html";
+    }
+});
+
+cancelBtn.addEventListener("click", (e) =>{
+    location.href="/Oulim/front/html/mypage/community-history/myposts.html";
 });

@@ -101,3 +101,15 @@
   display: flex;
   width: 167px;
 }
+
+/* 오류 */
+.is-error-text{
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+  min-height: 8px;
+}
+
+.c-input.is-error{
+  border: 1px solid red;
+}

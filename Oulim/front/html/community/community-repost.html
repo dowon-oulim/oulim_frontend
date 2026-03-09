@@ -31,6 +31,8 @@
   fetch('/Oulim/footer.html').then(r => r.text()).then(t => footer.innerHTML = t)
 </script>
 <div id="header"></div>
+<!-- js 연결 -->
+<script defer src="/Oulim/asset/js/pages/community/community-repost.js"></script>
 
 <body>
   <!-- Header 자동 삽입 -->
@@ -78,10 +80,10 @@
               <!-- 공용 컴포넌트 투버튼 c-button-group  -->
               <div class="c-button-group">
                 <div>
-                  <button class="c-button c-button--primary c-button--md">수정</button>
+                  <button type="submit" id="repost-button" class="c-button c-button--primary c-button--md">수정</button>
                 </div>
                 <div>
-                  <button class="c-button c-button--secondary c-button--md">취소</button>
+                  <button type="button" id="cancel-button" class="c-button c-button--secondary c-button--md">취소</button>
                 </div>
               </div>
             </div>

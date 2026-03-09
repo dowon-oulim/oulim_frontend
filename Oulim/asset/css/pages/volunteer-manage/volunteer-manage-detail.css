@@ -1,15 +1,23 @@
-.p-volunteer-manage-detail {
-    padding: 52px 0 140px;
-}
-
-.l-volunteer-manage-detail_inner {
-    width: 1080px;
-    margin: 0 auto;
+.l-container {
+    padding: 100px 0 140px;
 }
 
 .p-volunteer-manage-detail_header {
-    margin-bottom: 52px;
+    position: relative;
+    margin-bottom: 48px;
     text-align: center;
+}
+
+.p-volunteer-manage-detail_header .c-button-group{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.p-volunteer-manage-detail_header 
+.c-button--secondary{
+  background-color: #f2f2f2;
+  color: #666;
 }
 
 /* 페이지네이션 영역 */

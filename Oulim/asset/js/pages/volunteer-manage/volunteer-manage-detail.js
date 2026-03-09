@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const absentBtns = document.querySelectorAll(".absent-btn");          // 결석버튼
   const card = document.querySelector(".c-detail-card");                // 상세카드
   const volunteerStatus = document.querySelector("#volunteerStatus");   // 봉사 상태
+  const deleteBtns = document.querySelectorAll(".delete-btn");          // 삭제버튼
+  const editBtns = document.querySelectorAll(".edit-btn");              // 수정버튼
 
   const today = new Date();                                             // 현재날짜                                  
   const recruitStartDate = new Date(card.dataset.recruitStartDate);
@@ -52,6 +54,19 @@ document.addEventListener("DOMContentLoaded", () => {
     if (absentBtn) absentBtn.disabled = !isActive;
   });
 
+  // 삭제 버튼
+  deleteBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      alert("삭제되었습니다.");
+    });
+  });
+
+  // 수정 버튼
+  editBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      location.href = '/Oulim/front/html/volunteer-management/volunteer-manage-edit.html';
+    });
+  });
 
   // 추천 버튼
   recommendBtns.forEach(btn => {

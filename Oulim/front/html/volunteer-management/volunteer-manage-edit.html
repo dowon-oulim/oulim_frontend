@@ -17,15 +17,13 @@
     <link rel="stylesheet" href="/Oulim/asset/css/component/input.css" />
     <link rel="stylesheet" href="/Oulim/asset/css/component/button.css" />
     <link rel="stylesheet" href="/Oulim/asset/css/component/card.css" />
+    <link rel="stylesheet" href="/Oulim/asset/css/component/select.css"/>
 
-    <script src="/Oulim/asset/assets/js/include.js"></script>
+    <script defer src="/Oulim/asset/js/pages/main/include.js"></script>
+    <script src="/Oulim/asset/js/pages/volunteer-manage/volunteer-manage-list.js" defer></script>
+    <script defer src="/Oulim/asset/js/pages/volunteer-manage/volunteer-manage-edit.js"></script>
 </head>
 <body>
-<script defer>
-    fetch('/Oulim/header-login.html').then(r => r.text()).then(t => header.innerHTML = t)
-    fetch('/Oulim/footer.html').then(r => r.text()).then(t => footer.innerHTML = t)
-</script>
-<script defer src="/Oulim/asset/js/pages/volunteer-manage/volunteer-manage-edit.js"></script>
     <div id="header"></div>
     <!-- <%@ include file="header.jsp" %> -->
 
@@ -49,8 +47,10 @@
 
                     <div class="l-volunteer-manage-edit_form-item">
                         <label class="l-volunteer-manage-edit_form-label">봉사시간</label>
-                        <div class="l-volunteer-manage-edit_form-field">
-                            <input type="text" id="volunteerTime" class="c-input" placeholder="10~18시" />
+                        <div class="l-volunteer-manage-edit_form-field l-volunteer-manage-edit_form-field--period">
+                            <input type="text" id="volunteerStartTime" class="c-input" placeholder="10시">
+                            <span class="l-volunteer-manage-edit_form-tilde">~</span>
+                            <input type="text" id="volunteerEndTime" class="c-input" placeholder="18시">
                         </div>
                     </div>
                     
@@ -67,10 +67,10 @@
                     <div class="l-volunteer-manage-edit_form-item">
                         <label class="l-volunteer-manage-edit_form-label">봉사자연령</label>
                         <div class="l-volunteer-manage-edit_form-field">
-                            <select id="volunteerAge" class="c-input">
-                                <option value="">청소년(14~19)</option>
-                                <option>청년(20~29)</option>
-                                <option>직장인(30~ )</option>
+                            <select id="volunteerAge" class="c-select">
+                                <option value="">청소년(14~19세)</option>
+                                <option>청년(20~29세)</option>
+                                <option>직장인(30~ 세)</option>
                             </select>
                         </div>
                     </div>
@@ -78,8 +78,8 @@
                     <div class="l-volunteer-manage-edit_form-item">
                         <label class="l-volunteer-manage-edit_form-label">일자당 모집 인원</label>
                         <div class="l-volunteer-manage-edit_form-field">
-                            <select id="volunteerCapacity" class="c-input">
-                                <option value="">30(최대인원)</option>
+                            <select id="volunteerCapacity" class="c-select">
+                                <option value="">30 (최대인원)</option>
                                 <option>25</option>
                                 <option>20</option>
                                 <option>15</option>
@@ -91,8 +91,10 @@
                     <div class="l-volunteer-manage-edit_form-item">
                         <label class="l-volunteer-manage-edit_form-label">활동분야</label>
                         <div class="l-volunteer-manage-edit_form-field">
-                            <select id="volunteerCategory" class="c-input">
-                                <option value="">환경</option>
+                            <select id="volunteerCategory" class="c-select">
+                                <option value="환경">환경</option>
+                                <option>의료</option>
+                                <option>교육</option>
                             </select>
                         </div>
                     </div>

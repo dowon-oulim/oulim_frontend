@@ -1,5 +1,8 @@
 /* mission.css */
 
+.l-main{
+    padding: 70px 0;
+}
 .mission-header {
     text-align: center;
     margin-bottom: 40px;

@@ -6,9 +6,9 @@ const password = document.getElementsByName("password")[0];
 
 accept.addEventListener('click', () => {
 
-    if (password.value === "") {
+    if (password.value.trim() === "") {
         alert("비밀번호를 입력해주세요.");
-    } else if (password.value === "1234") { // 비밀번호는 임의로 넣은 값, 나중에 DB에서 가져올 것
+    } else if (password.value.trim() === "1234") { // 비밀번호는 임의로 넣은 값, 나중에 DB에서 가져올 것
         alert("로그인 성공");
     };
 

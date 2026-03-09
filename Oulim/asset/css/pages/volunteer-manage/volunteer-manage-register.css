@@ -60,6 +60,10 @@
     min-width: 0;
 }
 
+.l-volunteer-manage-register_form-field .c-select{
+    width: 100%;
+}
+
 /* ~ */
 .l-volunteer-manage-register_form-tilde {
     flex-shrink: 0;

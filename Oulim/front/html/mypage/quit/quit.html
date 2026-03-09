@@ -26,6 +26,8 @@
       .then(r => r.text())
       .then(t => document.getElementById('footer').innerHTML = t)
   </script>
+
+  <script defer src="/Oulim/asset/js/pages/mypage/quit/quit.js"></script>
 </head>
 
 <body>
@@ -118,7 +120,7 @@
         <!-- 체크 -->
         <div class="chk-box">
           <label>
-            <input type="checkbox" />
+            <input id="chk-box-label" type="checkbox" />
             탈퇴 약관을 읽고 이해하였으며, 이에 동의합니다.
           </label>
         </div>
@@ -139,11 +141,11 @@
 
 
           <div class="c-button-group">
-            <button class="c-button c-button--primary c-button--md">
-              확인
+            <button id="accept" class="c-button c-button--primary c-button--md">
+              탈퇴
             </button>
 
-            <button class="c-button c-button--secondary c-button--md">
+            <button id="cancel" class="c-button c-button--secondary c-button--md">
               취소
             </button>
           </div>

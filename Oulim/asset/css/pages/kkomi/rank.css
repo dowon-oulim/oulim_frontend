@@ -5,18 +5,6 @@
 text-align:center;
 }
 
-.p-rank__top3{
-
-padding-top: 52px;
-display:flex;
-justify-content:center;
-align-items:flex-end;
-
-gap:24px;
-margin-bottom:24px;
-
-}
-
 
 /* 카드 공통 */
 
@@ -37,40 +25,33 @@ box-shadow:0 6px 16px rgba(0,0,0,0.1);
 
 }
 
-
-/* 1등 */
-
-.c-rank-card--first{
-
-width:300px;
-height:320px;
-
-background:gold;
-
+/* 1등 카드를 가운데에서 더 크게 보이게 하는 설정 */
+.p-rank__top3 {
+    padding: 52px 0;
+    display: flex;
+    align-items: flex-end; /* 아래쪽 정렬 */
+    justify-content: center;
+    gap: 20px;
 }
 
-
-/* 2등 */
-
-.c-rank-card--second{
-
-width:200px;
-height:240px;
-
-background:silver;
-
+.c-rank-card--first {
+    order: 2; /* 가운데 배치 */
+    transform: scale(1.1);
+    z-index: 2;
 }
 
+.c-rank-card--second {
+    order: 1; /* 왼쪽 배치 */
+}
 
-/* 3등 */
+.c-rank-card--third {
+    order: 3; /* 오른쪽 배치 */
+}
 
-.c-rank-card--third{
-
-width:200px;
-height:240px;
-
-background:#e9d6c1;
-
+/* 점수 숫자 가독성 */
+.c-rank-card-user__score, .c-rank-item__score {
+    font-weight: 700;
+    color: var(--color-primary);
 }
 
 
@@ -113,8 +94,7 @@ font-weight:600;
 .c-rank-list{
 
 max-width:600px;
-margin:0 auto;
-
+margin:24px auto;
 display:flex;
 flex-direction:column;
 
@@ -162,3 +142,4 @@ text-align:left;
 font-weight:600;
 
 }
+

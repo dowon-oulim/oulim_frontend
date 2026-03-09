@@ -151,6 +151,7 @@ gap:10px;
 padding:20px;
 justify-content: center;
 border:1px solid black;
+margin-bottom: 150px;
 }
 
 
@@ -173,6 +174,13 @@ border:1px solid black;
 
 
 
-/* .c-button{
-    width: 50px;
-} */
+.c-button{
+    width: 100px;
+}
+
+.c-list--8col .c-list__header,
+.c-list--8col .c-list__row{
+
+  grid-template-columns:2cm 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}

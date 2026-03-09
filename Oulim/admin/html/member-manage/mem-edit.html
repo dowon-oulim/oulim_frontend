@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/Oulim/asset/css/component/DetailCard.css" />
     <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
 
-    <link rel="stylesheet" href="community-manage.css" />
+    <link rel="stylesheet" href="mem-edit.css" />
   </head>
 
   <body>
@@ -76,93 +76,38 @@
           </ul>
         </nav>
       </aside>
-
-      <!-- 메인 컨텐츠 -->
-      <div class="search-user">
-
-        <div class="header"> 
+      <!--메인 헤더  -->
+      <div class="userManage">
+      <div class="header"> 
         <h1>회원관리</h1>
-        </div>
-          <section class="l-content">
-            <div id="content-area">
-              <select class="search-item">
-                <option>유저번호</option>
-                <option>아이디</option>
-                <option>닉네임</option>
-                <option>회원종류</option>
-                <option>가입일</option>
-                <option>이름</option>
-              </select>
-              <input type="text" class="c-input" placeholder="검색조건">
-              <button class="c-button c-button--primary c-button--md">조회</button>
-            </div>
-
-            <div class="c-list c-list--6col">
-        <!-- header -->
-        <div class="c-list__header">
-          
-          <span class="c-list__col">체크</span>
-          <span class="c-list__col">유저번호</span>
-          <span class="c-list__col">아이디</span>
-          <span class="c-list__col">닉네임</span>
-          <span class="c-list__col">회원종류</span>
-          <span class="c-list__col">가입일</span>
-          <span class="c-list__col">이름</span>
-          <span class="c-list__col">관리</span>
-
-        </div>
-        <!-- body -->
-        <div class="c-list__body">
-          <div class="c-list__row">
-            <span class="c-list__col">
-              제설 봉사
-            </span>
-            <span class="c-list__col">
-              26.02.03
-            </span>
-            <span class="c-list__col">
-              26.02.03
-            </span>
-            <span class="c-list__col">
-              26.02.03
-            </span>
-            <span class="c-list__col">
-              모집중
-            </span>
-            <div class="c-list__actions">
-              <button class="c-button c-button--primary c-button--md">
-                수정
-              </button>
-            </div>
-          </div>
-          <div class="c-list__row">
-            <span class="c-list__col">
-              제설 봉사
-            </span>
-            <span class="c-list__col">
-              26.02.03
-            </span>
-            <span class="c-list__col">
-              26.02.03
-            </span>
-            <span class="c-list__col">
-              26.02.03
-            </span>
-            <span class="c-list__col">
-              모집중
-            </span>
-            <div class="c-list__actions">
-              <button class="c-button c-button--primary c-button--md">
-                수정
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
-          </section>
+      <!-- 메인 컨텐츠 -->
+      <section class="l-content">
+        <div id="content-area">
+          <div id="userNumber">
+            <p>유저번호 : 1</p>
+          </div>
+          <div id="userName">
+            <p>유저 이름 : 사람</p>
+          </div>
+          <div id="userNickname">
+            <p>유저 닉네님 : 닉네임1</p>
+            <button class="c-button c-button--primary c-button--md">
+              닉네임 초기화 하기
+            </button>
+          </div>
+          <div id="myPoint">
+            <p>현재 보유 포인트 : 3000</p>
+            <input type="text" class="c-input" placeholder="변경할 포인트 입력">
+            <button class="c-button c-button--primary c-button--md">
+              적용하기
+            </button>
+          </div>
+      </section>
       </div>
     </main>
 
+  
 
     <!-- Footer 자동 삽입 -->
     <!-- <%@ include file="footer.jsp" %> -->

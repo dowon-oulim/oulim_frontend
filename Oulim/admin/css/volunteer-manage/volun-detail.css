@@ -126,6 +126,7 @@ aside {
   border: 1px solid black;
   margin-bottom: 20px;
 }
+
 /* 봉사카드안 텍스트 정렬 */
 .c-detail-card__row {
   text-align-last: right;
@@ -140,6 +141,7 @@ aside {
 .c-pagination__link {
   cursor: pointer;
 }
+
 /* 페이지 네이션 중간 정렬 */
 .page {
   justify-items: center;

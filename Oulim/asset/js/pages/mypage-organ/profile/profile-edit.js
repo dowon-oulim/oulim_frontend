@@ -6,7 +6,6 @@
 // 6. 저장 > 수정이 완료되었습니다
 // 수정된 값이 없으면 그냥 현재 상태 유지
 
-// const nickname = document.getElementsByName("nickname")[0];
 const nickname = document.getElementById("nickname");
 const nicknameContainer = document.getElementsByClassName("i-nickname")[0];
 const email = document.getElementById("email");
@@ -16,10 +15,9 @@ const newPassword = document.getElementsByName("new-password")[0];
 const passwordChk = document.getElementsByName("new-password-check")[0];
 
 
-const exist1 = document.getElementsByClassName("c-button c-button--primary c-button--md")[0];
-const exist2 = document.getElementsByClassName("c-button c-button--primary c-button--md")[2];
-const verifyBtn = document.getElementsByClassName("c-button c-button--primary c-button--md")[4];
-const addrBtn = document.getElementsByClassName("c-button c-button--primary c-button--md")[6];
+const exist2 = document.getElementById("emailBtn");
+const verifyBtn = document.getElementById("verifyBtn");
+const addrBtn = document.getElementById("addrBtn");
 
 const nicknameError = document.getElementsByClassName("c-form-field is-error")[0];
 const emailError = document.getElementsByClassName("c-form-field is-error")[1];
@@ -28,18 +26,6 @@ const verifyError = document.getElementsByClassName("c-form-field is-error")[2];
 const accept = document.getElementById("accept");
 const cancel = document.getElementById("cancel");
 
-exist1.addEventListener("click", () => { // 닉네임 검사
-
-
-    if (nickname.value.trim() === "") {
-        alert("비었음");
-    } else if (nickname.value.trim() === "wnstmd") {
-
-        nicknameContainer.style.display = "none";
-        nicknameError.style.display = "block";
-    };
-
-});
 
 exist2.addEventListener("click", () => { // 이메일 검사
 
@@ -48,6 +34,8 @@ exist2.addEventListener("click", () => { // 이메일 검사
     } else if (email.value.trim() === "wnstmd@naver.com") {
         emailContainer.style.display = "none";
         emailError.style.display = "block";
+    } else {
+        alert("인증번호가 발송되었습니다.");
     };
 
 });
@@ -55,7 +43,7 @@ exist2.addEventListener("click", () => { // 이메일 검사
 verifyBtn.addEventListener("click", () => { // 인증번호 검사
 
     if (verify.value.trim() === "") {
-        alert("인증번호가 발송되었습니다.");
+        alert("값을 입력해주세요.");
     } else if (verify.value.trim() === "1234") {
         alert("인증성공");
     };
@@ -72,12 +60,10 @@ accept.addEventListener("click", () => {
 
     alert("수정 완료");
 
-    
-
 });
 
+
 cancel.addEventListener("click", () => {
-    // location("../");
     alert("취소");
 });
 

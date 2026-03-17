@@ -19,7 +19,7 @@
 
   <script defer src="/Oulim/asset/js/pages/main/include.js"></script>
 
-  <script defer src="/Oulim/asset/js/pages/mypage/profile/profile-edit.js"></script>
+  <script defer src="/Oulim/asset/js/pages/mypage-organ/profile/profile-edit.js"></script>
 </head>
 
 <body>
@@ -38,42 +38,20 @@
             <h2>마이페이지</h2>
 
             <ul class="list1">
-              <li>나의 정보</li>
-              <br>
-              <a href="/Oulim/front/html/mypage/profile/profile.html">
-                <li>- 내 정보 보기</li>
-              </a>
+              
+             
               <br>
               <a href="/Oulim/front/html/mypage/profile/profile-edit.html">
-                <li>- 내 정보 수정</li>
+                <li>내 정보 수정</li>
               </a>
-              <br>
+              
             </ul>
 
-            <ul class="list2">
-              <li>봉사조회</li>
-              <br>
-              <a href="/Oulim/front/html/mypage/volunteer-history/coming-volunteer.html">
-                <li>- 예정된 봉사 이력 조회</li>
-              </a>
-              <br>
-              <a href="/Oulim/front/html/mypage/volunteer-history/finish-volunteer.html">
-                <li>- 완료된 봉사 이력 조회</li>
-              </a>
+            
 
-            </ul>
+           
 
-            <ul class="list3">
-              <a href="/Oulim/front/html/mypage/point-history/point-history.html">
-                <li>포인트 조회</li>
-              </a>
-            </ul>
-
-            <ul class="list4">
-              <a href="/Oulim/front/html/mypage/community-history/myposts.html">
-                <li>작성글 조회</li>
-              </a>
-            </ul>
+            
 
             <ul class="list5">
               <a href="/Oulim/front/html/mypage/quit/quit.html">
@@ -90,7 +68,7 @@
       <div class="main-2">
 
         <div class="main-text-box">
-          <h1>나의 정보 수정</h1>
+          <h1>기업 정보 수정</h1>
         </div>
 
         <form>
@@ -99,10 +77,10 @@
 
             <div class="i-nickname">
 
-              <h5>닉네임</h5>
+              <h5>기관명</h5>
               <div class="pw-text">
-                <input id="nickname" type="text" class="c-input" name="nickname" placeholder="닉네임">
-                <button type="button" class="c-button c-button--primary c-button--md">중복확인</button>
+                <input id="organname" type="text" class="c-input" name="organname" placeholder="기관명">
+                <!-- <button type="button" class="c-button c-button--primary c-button--md">중복확인</button> -->
               </div>
             </div>
 
@@ -114,7 +92,7 @@
               </label>
               <div class="pw-text">
                 <input type="text" class="c-input" placeholder="닉네임">
-                <button type="button" class="c-button c-button--primary c-button--md">중복확인</button>
+                <!-- <button type="button" class="c-button c-button--primary c-button--md">중복확인</button> -->
               </div>
               <span class="c-form-field__error">
                 존재하는 닉네임입니다.
@@ -128,7 +106,7 @@
               <h5>이메일</h5>
               <div class="pw-text">
                 <input id="email" type="text" class="c-input" name="email" placeholder="이메일">
-                <button type="button" class="c-button c-button--primary c-button--md">중복확인</button>
+                <button id="emailBtn" type="button" class="c-button c-button--primary c-button--md">중복확인</button>
               </div>
             </div>
 
@@ -140,7 +118,7 @@
               </label>
               <div class="pw-text">
                 <input type="text" class="c-input" placeholder="이메일">
-                <button type="button" class="c-button c-button--primary c-button--md">중복확인</button>
+                <button id="emailBtn2" type="button" class="c-button c-button--primary c-button--md">중복확인</button>
               </div>
               <span class="c-form-field__error">
                 존재하는 이메일입니다.
@@ -152,7 +130,7 @@
             <h5>인증번호</h5>
             <div class="pw-text">
               <input id="verify" type="text" class="c-input" name="verify" placeholder="이메일 인증번호 입력">
-              <button class="c-button c-button--primary c-button--md">인증확인</button>
+              <button id="verifyBtn" class="c-button c-button--primary c-button--md">인증확인</button>
             </div>
 
             <p>
@@ -163,7 +141,7 @@
               </label>
               <div class="pw-text">
                 <input type="email" class="c-input" placeholder="이메일 인증번호 입력">
-                <button type="button" class="c-button c-button--primary c-button--md">중복확인</button>
+                <button type="button" class="c-button c-button--primary c-button--md">인증확인</button>
               </div>
               <span class="c-form-field__error">
                 인증번호가 일치하지 않습니다.
@@ -188,7 +166,7 @@
             <h5>주소</h5>
             <div class="pw-text">
               <input type="text" class="c-input" name="address" placeholder="주소 추가하기">
-              <button class="c-button c-button--primary c-button--md">주소검색</button>
+              <button id="addrBtn" class="c-button c-button--primary c-button--md">주소검색</button>
             </div>
 
           </div>
